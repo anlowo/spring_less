@@ -1,7 +1,7 @@
 package com.example.spring_less.lesson12.hibernate3;
 
-import com.example.spring_lesson1.hibernate3.entity.Address;
-import com.example.spring_lesson1.hibernate3.entity.Employee;
+import com.example.spring_less.lesson12.hibernate3.entity.Address;
+import com.example.spring_less.lesson12.hibernate3.entity.Employee;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
