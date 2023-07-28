@@ -1,14 +1,17 @@
-package com.example.spring_less.component;
+package com.example.spring_less.lesson6.config_value.value;
 
-import com.example.spring_less.lesson1.application_context.Cat;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-public class ConfAnnotation {
+public class Test {
     public static void main(String[] args) {
         ClassPathXmlApplicationContext context =
                 new ClassPathXmlApplicationContext("application_context4.xml");
-        Cat cat = context.getBean("cat", Cat.class);
-        cat.say();
+        Person person = context.getBean("personB", Person.class);
+
+        person.callPet();
+
+        System.out.println(person.getName());
+        System.out.println(person.getAge());
 
         context.close();
     }

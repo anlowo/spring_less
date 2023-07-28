@@ -9,16 +9,16 @@
 
     <context:property-placeholder location="classpath:application.properties"/>
 
-    <bean id="myPet" class="com.example.spring_less.lesson1.Dog">
+    <bean id="myPet" class="com.example.spring_less.lesson1.application_context.Dog">
     </bean>
 
-    <bean id="myPet1" class="com.example.spring_less.lesson1.Cat">
+    <bean id="myPet1" class="com.example.spring_less.lesson1.application_context.Cat">
     </bean>
 
 <!--    <bean id="myPerson" class="com.example.spring_less.com.example.spring_less.Person">-->
 <!--        <constructor-arg ref="myPet"/>-->
 <!--    </bean>-->
-    <bean id="myPerson" class="com.example.spring_less.lesson2.Person">
+    <bean id="myPerson" class="com.example.spring_less.lesson2.application_context2.Person">
         <property name="pet" ref="myPet"/>
         <property name="name" value="${person.name}"/>
         <property name="age" value="${person.age}"/>

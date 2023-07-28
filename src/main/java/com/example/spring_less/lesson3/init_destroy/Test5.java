@@ -1,6 +1,6 @@
 package com.example.spring_less.lesson3.init_destroy;
 
-import com.example.spring_less.lesson1.Dog;
+import com.example.spring_less.lesson1.application_context.Dog;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class Test5 {

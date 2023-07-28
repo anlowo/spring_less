@@ -10,7 +10,7 @@
     <context:property-placeholder location="classpath:application.properties"/>
 
     <bean id="myPet"
-          class="com.example.spring_less.lesson1.Dog"
+          class="com.example.spring_less.lesson1.application_context.Dog"
           init-method="init"
           destroy-method="destroy">
     </bean>
