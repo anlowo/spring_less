@@ -60,13 +60,13 @@ public class StudentsService {
     }
 
     public void getAllStudents() {
-        List<Students> list = repository.findAll();
+        List<Students> students = repository.findAll();
         StringBuilder result = new StringBuilder();
-        for (Students students : list) {
-            result.append(students.getId()).append(" - ")
-                    .append(students.getName())
+        for (Students student : students) {
+            result.append(student.getId()).append(" - ")
+                    .append(student.getName())
                     .append(" - Course ")
-                    .append(students.getCourses()).append("\n");
+                    .append(student.getCourses()).append("\n");
             System.out.println(result);
         }
     }

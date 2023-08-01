@@ -27,10 +27,10 @@ public class ConsoleUi implements CommandLineRunner {
             System.out.println("Выберите действие:");
             System.out.println("1. Добавить студента");
             System.out.println("2. Вывести студента");
-            System.out.println("2. Вывести всех студентов");
-            System.out.println("3. Обновить студента");
-            System.out.println("4. Удалить студента");
-            System.out.println("5. Выход с программы");
+            System.out.println("3. Вывести всех студентов");
+            System.out.println("4. Обновить студента");
+            System.out.println("5. Удалить студента");
+            System.out.println("6. Выход с программы");
 
             int choice = scanner.nextInt();
             scanner.nextLine();
@@ -40,7 +40,7 @@ public class ConsoleUi implements CommandLineRunner {
                     addStudent(scanner);
                     break;
                 case 2:
-
+                    readStudent(scanner);
                 case 3:
                     readAllStudent();
                     break;
@@ -51,6 +51,7 @@ public class ConsoleUi implements CommandLineRunner {
                     deleteStudent(scanner);
                     break;
                 case 6:
+                    exit = true;
                     System.out.println("Выйти с программы");
                 default:
                     System.out.println("Данные введены верно");
